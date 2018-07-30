@@ -1,0 +1,136 @@
+/*
+dark blue #2B3443
+sidebar blue #6E7D95
+light gray #ECF2F7
+gray line in light gray area #D3DBE3
+gray line in white header #F2F3F5
+Aside - inactive category: #A0ABBF;
+Aside - med gray header: #63728B;
+Aside - active: #ffffff;
+Aside - left border on hover: #1A8FD8;
+Categories: red - #E91A60;
+Categories: green - #02A989;
+Categories: yellow - #FFD505;
+Categories: blue - #2CAFFE;
+
+FreightSans - Source Sans / Hind Vadoodora,
+Whitney - Hind
+Titilium - numbers
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+/* sidebar navigation menu */
+
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px repeat(2, 220px) 1fr;
+  background-color: #354051;
+  font-family: 'Hind', sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 0.65rem;
+  color: #A0ABBF;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.profile-info {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-bottom: 2px solid #2B3443;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 65px;
+  transform: scaleX(-1);
+  border-radius: 50%;
+}
+
+.profile-name {
+  height: 0.75rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-family: 'Average Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+}
+
+.profile-carat {
+  height: 0.45rem;
+  margin: .25rem 0 0 .25rem;
+  transform: rotate(180deg);
+}
+
+.main-nav,
+.admin-nav,
+.categories {
+  height: 100%;
+  padding: 7px 0 10px 18px;
+  border-top: 1px solid #3B4759;
+  border-bottom: 2px solid #2B3443;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.aside-header {
+  margin-bottom: 0;
+  color: #63728B;
+  font-weight: 700;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+}
+
+.icon-group img {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.main-nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+}
+
+.admin-nav {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.categories {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  border-bottom: 0;
+}
+
+main {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}

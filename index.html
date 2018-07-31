@@ -3,10 +3,14 @@
   <head>
     <title>My Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Hind:400,600,700|Average+Sans|Titillium+Web:600">
@@ -152,7 +156,7 @@
       </header>
       <section class="dashboard">
         <article class="data-charts">
-          <section class="charts first">
+          <section class="first">
             <div class="chart-circles">
               <div class="single-chart">
                 <svg viewbox="0 0 36 36" class="circular-chart green">
@@ -194,7 +198,6 @@
                   <text x="18" y="25.35" class="circle-subtext">
                     INTERVIEWS
                   </text>
-
                 </svg>
               </div>
               <div class="single-chart">
@@ -219,8 +222,21 @@
                 </svg>
               </div>
             </div>
+          </section>
+          <section class="lower-first">
             <button class="totals-button">
-              TOTALS - Out of <span>5,231</span> views
+              TOTALS <span class="span-dot">&middot</span> Out of <span class="span-nums">5,231</span> views
+            </button>
+          </section>
+          <section class="second">
+            <img
+              class="bar-chart"
+              src="images/barchart.png"
+              alt="A bar chart of applicants per day of the week">
+          </section>
+          <section class="lower-second">
+            <button class="applicants-button">
+              APPLICANTS/DAY
             </button>
           </section>
         </article>
@@ -230,6 +246,17 @@
           </button>
         </div>
         <article class="job-details">
+          <article class="job-description">
+            <section class="job-head">
+              <h3 class="job-descript-title">JOB DESCRIPTION</h3>
+              <button class="job-descript-edit">
+                <i class="fas fa-pencil-alt fa-fw"></i>
+                EDIT
+              </button>
+            </section>
+            <section class="job-descript-body">
+            </section>
+          </article>
         </article>
       </section>
     </main>

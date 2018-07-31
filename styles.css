@@ -1,14 +1,13 @@
 /*
-charts:
-dark gray numbers - circle: #586678;
-med gray line - circle: #D9E4EB;
-blue line - circle: #16A4FA;
-green line - circle: #4ABBC1;
-purple line - circle: #AC66AD;
+job-description section
 
-FreightSans - Source Sans / Hind Vadoodora,
-Whitney - Hind
-Titilium - numbers
+blue header
+header button
+
+rounded corners
+gray line bottom
+gray side to white
+
 */
 
 * {
@@ -146,16 +145,30 @@ h4 {
 .admin-nav {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  padding-top: 10px;
+  grid-template-rows: 29px repeat(5, 15.85%);
+}
+
+.admin-nav .admin-header {
+  padding-bottom: 15px;
 }
 
 .categories {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  height: 225px;
+  padding-top: 15px;
+  grid-template-rows: 29px repeat(5, 15.85%);
   border-bottom: 0;
 }
 
 .categories .icon-group {
   padding-left: 15px;
+}
+
+.categories h4 {
+  letter-spacing: 0.02rem;
+  margin-left: 2px;
 }
 
 .aside-administrative i {
@@ -180,9 +193,11 @@ main {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-rows: 8% 18.75% 1fr;
+  grid-template-rows: 63px 151px 990px;
   grid-template-columns: 1fr;
 }
+
+/* search bar area */
 
 nav {
   grid-row: 1 / 2;
@@ -223,6 +238,13 @@ nav section {
   color: #ffffff;
   cursor: pointer;
   transform: scale(1.15);
+}
+
+.menu-toggle:active,
+.add-friend:active,
+.add-event:active,
+.toggle-view:active {
+  background-color: #289EE5;
 }
 
 .menu-toggle {
@@ -287,6 +309,8 @@ nav section {
   grid-column: 5 / 6;
   border-right: 0;
 }
+
+/* header area with job title */
 
 header {
   grid-row: 2 / 3;
@@ -353,6 +377,10 @@ h2 {
   text-decoration: underline;
 }
 
+.subheading a:active {
+  color: #289EE5;
+}
+
 .header-buttons {
   width: 225px;
   display: flex;
@@ -386,6 +414,10 @@ h2 {
   outline: 0;
 }
 
+.header-buttons button:active {
+  background-color: #289EE5;
+}
+
 .header-buttons .job-status {
   width: 75px;
   color: #8A95A4;
@@ -408,6 +440,8 @@ h2 {
 .header-buttons .job-status:hover > i {
   color: #ffffff;
 }
+
+/* dashboard view options tabs */
 
 .dashboard-view {
   grid-row: 2 / 3;
@@ -443,6 +477,8 @@ h2 {
   border-bottom: 2.5px solid #2CAFFE;
 }
 
+/* dashboard data area */
+
 .dashboard {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
@@ -456,21 +492,29 @@ h2 {
 .data-charts {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  height: 100%;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 55% 45%;
-  align-items: center;
+  grid-template-rows: 70% 25%;
+  grid-template-columns: 53% 43%;
+  grid-gap: 4%;
+  justify-items: center;
+  align-items: start;
 }
 
 .first {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-self: stretch;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
 }
 
 .chart-circles {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -498,7 +542,6 @@ h2 {
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
-
 
 @keyframes progress {
   0% {
@@ -530,13 +573,21 @@ h2 {
   fill: #8C97A5;
   font-family: 'Hind', sans-serif;
   font-size: 0.2rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.1px;
   text-anchor: middle;
 }
 
-.charts button {
-  height: 32px;
-  width: 175px;
+.lower-first {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-content: center;
+  align-items: start;
+}
+
+.data-charts button {
+  height: 27px;
+  width: 165px;
   padding-top: 5.5px;
   border: 1.5px solid #D2DAE2;
   border-radius: 20px;
@@ -552,23 +603,61 @@ h2 {
   color: #8A95A4;
 }
 
-.charts button:hover {
+.data-charts button:hover {
   background-color: #2CAFFE;
   border-color: transparent;
   color: #ffffff;
   cursor: pointer;
 }
 
-.charts span {
+.data-charts button:focus {
+  outline: 0;
+}
+
+.data-charts button:active {
+  background-color: #289EE5;
+}
+
+.span-dot {
+  font-weight: 700;
+  margin: 0 5px;
+}
+
+.data-charts .span-nums {
   font-weight: 700;
   margin: 0 3px;
   letter-spacing: 0.6px;
 }
 
+.second {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second img {
+  margin-top: 15px;
+  max-height: 100%;
+}
+
+.lower-second .applicants-button {
+  margin-left: 13%;
+  width: 120px;
+}
+
+.bar-chart {
+  max-width: 93%;
+}
+
+/* horizontal break */
+
 .main-separator {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  margin-left: 5px;
   border-bottom: 2px solid #D3DBE3;
   display: flex;
   justify-content: center;
@@ -600,9 +689,8 @@ h2 {
   font-size: 0.85rem;
 }
 
-.show-more-dashboard i:hover {
+.show-more-dashboard:hover > i {
   background-color: #2CAFFE;
-
   border-color: transparent;
   color: #ffffff;
   cursor: pointer;
@@ -612,7 +700,58 @@ h2 {
   outline: 0;
 }
 
+.show-more-dashboard:active > i {
+  background-color: #289EE5;
+}
+
+/* dashboard job details area */
+
 .job-details {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  padding: 47px 1px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5%;
 }
+
+.job-description {
+  grid-row: span 4;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  grid-template-columns: 1fr;
+}
+
+.job-head {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #6E7D95;
+  color: #ffffff;
+  font-family: 'Hind', sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 0.75rem;
+  border-radius: 3px 3px 0 0;
+
+}
+
+.job-head h3 {
+  font-size: ;
+  font-weight: 600;
+}
+
+.job-descript-edit {
+  background-color: #7B8BA6;
+  color: #ffffff;
+  border: 0;
+}
+
+.job-descript-edit:hover {
+  background-color: #ffffff;
+  color: #7B8BA6;
+}
+

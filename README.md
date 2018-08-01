@@ -5,4 +5,10 @@
 
 Assignment specs can be found [here](http://frontend.turing.io/projects/m1-static-comp-3.html).
 
-![Alt text](images/static-comp-challenge-3.jpg "Screenshot")
+Example Comp
+
+![Alt text](images/static-comp-challenge-3.jpg "Example Screenshot")
+
+My Site
+
+![Alt text](images/my-site.png "My Screenshot")

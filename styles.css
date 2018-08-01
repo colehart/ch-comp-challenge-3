@@ -15,11 +15,12 @@ gray side to white
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: grid;
   grid-template-columns: 15% 1fr;
   grid-template-rows: 1fr;
+  background-color: #ECF2F7;
 }
 
 /* sidebar navigation menu */
@@ -190,6 +191,7 @@ h4 {
 /* main content section */
 
 main {
+  background-color: #ffffff;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
@@ -487,6 +489,7 @@ h2 {
   grid-template-columns: 91.5%;
   grid-template-rows: 275px 5px 1fr;
   justify-content: center;
+  padding-left: 2.5px;
 }
 
 .data-charts {
@@ -709,25 +712,25 @@ h2 {
 .job-details {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  padding: 47px 1px;
+  padding: 47px 1px 0;
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 67.25% 27.75%;
+  grid-template-rows: 1fr;
   grid-column-gap: 5%;
 }
 
 .job-description {
-  grid-row: span 4;
+  grid-row: 1 / 2;
   grid-column: 1 / 2;
   display: grid;
-  grid-template-rows: 10% 1fr;
+  grid-template-rows: 60.5px 560px;
   grid-template-columns: 1fr;
 }
 
 .job-head {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  padding: 5px 10px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   background-color: #6E7D95;
@@ -740,18 +743,281 @@ h2 {
 }
 
 .job-head h3 {
-  font-size: ;
+  font-size: 0.75rem;
   font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-top: 4px;
 }
 
 .job-descript-edit {
+  height: 28px;
+  width: 65px;
+  margin-left: 15px;
+  padding: 0 7px;
+  border-radius: 2px;
+  border: 0;
   background-color: #7B8BA6;
   color: #ffffff;
-  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-descript-edit h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 80%;
+  letter-spacing: 0.5px;
+  padding-top: 0;
+}
+
+.job-descript-edit i {
+  margin: 0 3px 2px 0;
 }
 
 .job-descript-edit:hover {
   background-color: #ffffff;
   color: #7B8BA6;
 }
+
+.job-body {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  border-left: 1px solid #E7EDF2;
+  border-right: 1px solid #E7EDF2;
+  border-bottom: 2px solid #E5ECF1;
+  border-radius: 0 0 4px 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 58px) 133px 67px 65px;
+  background-color: #ffffff;
+  padding: 3px 23px 0;
+}
+
+.job-body article {
+  border-bottom: 1px solid #EDEEF0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 115px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.job-body h3 {
+  grid-column: 1 / 2;
+  color: #7A89A0;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 0 0 3px;
+}
+
+.job-body p {
+  grid-column: 2 / 3;
+  color: #7A89A0;
+  font-family: 'Average Sans', sans-serif;
+  font-size: 0.815rem;
+  line-height: 1.35;
+}
+
+.jb-description h3 {
+  align-self: start;
+  padding-top: 16px;
+}
+
+.jb-description p {
+  text-align: left;
+  padding-right: 20px;
+  letter-spacing: 0;
+}
+
+.jb-hiring-group {
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.jb-hiring-group img {
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid #D3DBE3;
+  transform: scaleX(-1);
+}
+
+.job-body article:last-child {
+  border: 0;
+  padding-bottom: 7px;
+}
+
+.jb-approved-salary p {
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  color: #737E8E;
+  padding-top: 2px;
+}
+
+.links {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 147px 447px;
+  grid-gap: 25px;
+}
+
+.social-links {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Average Sans', sans-serif;
+  font-size: 0.75rem;
+}
+
+.social-links button {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.social-links i {
+  font-size: 0.8rem;
+  padding: 3px 0 0 15px;
+}
+
+.social-links div {
+  padding-right: 15px;
+}
+
+.facebook-link {
+  background-color: #4A70C2;
+}
+
+.twitter-link {
+  background-color: #17B2F0;
+}
+
+.twitter-link i {
+  font-size: 1rem;
+  padding: 2px 0 0 10px;
+}
+
+.linkedin-link {
+  background-color: #0582BD;
+}
+
+.linkedin-link i {
+  font-size: 0.9rem;
+  padding: 1px 0 0 10px;
+}
+
+.link-box {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: 32% 37% 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.link-box article {
+  padding-top: 17.5px;
+  border-bottom: 2px solid #D2DAE2;
+  color: #8A95A6;
+  font-size: 0.7rem;
+  font-family: 'Average Sans', sans-serif;
+}
+
+.link-box article:first-child {
+  padding-top: 0;
+}
+
+.link-box article:last-child {
+  border-bottom: 0;
+  padding-top: 15px;
+}
+
+.link-box i {
+  font-size: 0.85rem;
+  margin: 5px 5px 0 2px;
+}
+
+.link-box h2 {
+  font-family: 'Hind', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+
+.link-box .link-icon-group {
+  display: flex;
+  color: #6F7A8A;
+  margin-bottom: 0;
+}
+
+.fa-money-check {
+  transform: scaleX(-1);
+}
+
+.link-box p {
+  line-height: 1.5;
+  margin: 0 0 15px 2px;
+}
+
+.link-input-group {
+  height: 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 78% 22%;
+  grid-template-rows: 1fr;
+}
+
+.link-input {
+  grid-column: 1 / 2;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  border-left: 1px solid #E7EDF2;
+  border-bottom: 2px solid #E5ECF1;
+  text-overflow: ellipsis;
+}
+
+.link-submit {
+  grid-column: 2 / 3;
+  background-color: #47BAC1;
+  border: 0;
+  border-right: 1px solid #E7EDF2;
+  border-bottom: 2px solid #E5ECF1;
+  border-radius: 0 4px 4px 0;
+  color: #ffffff;
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+  padding: 0 5px 1px 0;
+}
+
+.link-input::placeholder {
+  color: #8A95A6;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 0 3px 0 10px;
+}
+
+.upload-resume .link-input {
+  grid-column: 1 / 3;
+  border-radius: 4px;
+  border-right: 1px solid #E7EDF2;
+}
+
 

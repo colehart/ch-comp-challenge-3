@@ -1390,9 +1390,46 @@ h2 {
 }
 
 @media screen and (max-width: 489px) {
-  /* tighten up dashboard data */
   main {
-    grid-template-rows: 63px 200px 1810px;
+    grid-template-rows: 63px 200px 2500px;
+  }
+
+  .dashboard {
+    grid-template-rows: 1250px 5px 1fr;
+    padding-top: 25px;
+  }
+
+  .data-charts {
+    grid-template-rows: 70% 2% 20% 2%;
+  }
+
+  .first {
+    grid-template-rows: 1fr;
+    height: 90%;
+  }
+
+  .lower-first {
+    margin-top: 10px;
+  }
+
+  .second {
+    margin-top: 20px;
+    grid-row: 3 / 4;
+  }
+
+  .lower-second {
+    margin-bottom: 10px;
+    grid-row: 4 / 5;
+  }
+
+  .chart-circles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-chart {
+    width: 50%;
+    transform: scale(1.75, 1.75);
   }
 
   .job-details {
@@ -1458,6 +1495,7 @@ h2 {
 }
 
 @media screen and (max-width: 406px) {
+  /*tighten up svgs here*/
   main {
     grid-template-rows: 63px 200px 1830px;
   }

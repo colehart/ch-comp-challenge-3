@@ -271,7 +271,6 @@ nav section {
   align-items: center;
 }
 
-
 .search-bar i {
   border: 0;
   color: #ABB4BF;
@@ -292,7 +291,6 @@ nav section {
 .search-bar input:focus {
   outline: 0;
   color: #9BA4B0;
-  line-height: 100%;
 }
 
 ::placeholder {
@@ -530,7 +528,7 @@ h2 {
   display: block;
   margin: 10px auto;
   max-width: 80%;
-  max-height: 250px;
+  max-height: 150px;
 }
 
 .circle-bg {
@@ -778,6 +776,12 @@ h2 {
 .job-descript-edit:hover {
   background-color: #ffffff;
   color: #7B8BA6;
+  cursor: pointer;
+}
+
+.job-descript-edit:active {
+  background-color: #eeeeee;
+  color: #7B8BA6;
 }
 
 .job-body {
@@ -891,6 +895,10 @@ h2 {
   letter-spacing: 0.5px;
 }
 
+.social-links button:hover {
+  cursor: pointer;
+}
+
 .social-links i {
   font-size: 0.8rem;
   padding: 3px 0 0 15px;
@@ -904,8 +912,24 @@ h2 {
   background-color: #4A70C2;
 }
 
+.facebook-link:hover {
+  background-color: #4264AD;
+}
+
+.facebook-link:active {
+  background-color: #3E5EA3;
+}
+
 .twitter-link {
   background-color: #17B2F0;
+}
+
+.twitter-link:hover {
+  background-color: #16A6E0;
+}
+
+.twitter-link:active {
+  background-color: #159FD6;
 }
 
 .twitter-link i {
@@ -915,6 +939,14 @@ h2 {
 
 .linkedin-link {
   background-color: #0582BD;
+}
+
+.linkedin-link:hover {
+  background-color: #0474A8;
+}
+
+.linkedin-link:active {
+  background-color: #046B9C;
 }
 
 .linkedin-link i {
@@ -990,6 +1022,7 @@ h2 {
   border-left: 1px solid #E7EDF2;
   border-bottom: 2px solid #E5ECF1;
   text-overflow: ellipsis;
+  padding: 0 3px 0 10px;
 }
 
 .link-submit {
@@ -997,13 +1030,26 @@ h2 {
   background-color: #47BAC1;
   border: 0;
   border-right: 1px solid #E7EDF2;
-  border-bottom: 2px solid #E5ECF1;
+  border-bottom: 2px solid #E1E8ED;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
   font-size: 0.65rem;
   letter-spacing: 0.5px;
-  padding: 0 5px 1px 0;
 }
+
+.link-submit:hover {
+  cursor: pointer;
+  background-color: #41AAB0;
+}
+
+.link-submit:focus {
+  border: 0;
+}
+
+.link-submit:active {
+  background-color: #3C9DA3;
+}
+
 
 .link-input::placeholder {
   color: #8A95A6;
@@ -1011,7 +1057,6 @@ h2 {
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.2px;
-  padding: 0 3px 0 10px;
 }
 
 .upload-resume .link-input {
@@ -1020,4 +1065,15 @@ h2 {
   border-right: 1px solid #E7EDF2;
 }
 
+.email-submit {
+  color: #8A95A6;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-align: left;
+  padding-top: 2px;
+}
+
+/* media queries */
 

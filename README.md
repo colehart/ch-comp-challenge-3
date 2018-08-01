@@ -7,7 +7,7 @@ Assignment specs can be found [here](http://frontend.turing.io/projects/m1-stati
 
 Example Comp
 
-![Alt text](images/static-comp-challenge-3.jpg "Example Screenshot")
+![Alt text](images/job-summary.png "Example Screenshot")
 
 My Site
 

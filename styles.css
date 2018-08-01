@@ -113,6 +113,13 @@ h4 {
   border-left: 2px solid #1A8FD8;
 }
 
+.active-group {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #303949;
+  border-left: 2px solid #1A8FD8;
+}
+
 .icon-group i {
   grid-column: 1 / 2;
   padding-bottom: 2px;

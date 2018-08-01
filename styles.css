@@ -1125,6 +1125,10 @@ h2 {
     grid-column: 1 / 2;
   }
 
+  .second img {
+    max-height: 100%;
+  }
+
   .job-description {
     grid-template-rows: 60.5px 560px;
   }

@@ -16,12 +16,15 @@
       href="https://fonts.googleapis.com/css?family=Hind:400,600,700|Average+Sans|Titillium+Web:600">
   </head>
   <body>
-    <aside>
+    <aside role="navigation">
       <section class="profile-info">
-        <img class="profile-pic" src="images/hobbes.jpeg" alt="Your profile picture">
+        <img
+          class="profile-pic"
+          src="images/hobbes.jpeg"
+          alt="Your profile picture">
         <div class="profile-name">
           <p>Newton Barley</p>
-          <i class="fas fa-caret-down" alt="Toggle navigation"></i>
+          <i class="fas fa-caret-down" alt="Toggle profile options"></i>
         </div>
       </section>
       <section class="main-nav">
@@ -72,22 +75,30 @@
       </section>
       <section class="categories">
         <h4 class="aside-header">Categories</h4>
-        <div class="icon-group js-icon-group aside-administrative">
+        <div
+          aria-label="Click to toggle Administrative Category"
+          class="icon-group js-icon-group aside-administrative">
           <i class="fas fa-fw fa-square fa-check-square" aria-hidden="true">
           </i>
           <h4 class="aside-nav">Administrative</h4>
         </div>
-        <div class="icon-group js-icon-group aside-design">
+        <div
+          aria-label="Click to toggle Design Category"
+          class="icon-group js-icon-group aside-design">
           <i class="fas fa-fw  fa-square fa-check-square" aria-hidden="true">
           </i>
           <h4 class="aside-nav">Design</h4>
         </div>
-        <div class="icon-group js-icon-group aside-executive">
+        <div
+          aria-label="Click to toggle Executive Category"
+          class="icon-group js-icon-group aside-executive">
           <i class="fas fa-fw fa-square fa-check-square" aria-hidden="true">
           </i>
           <h4 class="aside-nav">Executive</h4>
         </div>
-        <div class="icon-group js-icon-group aside-hr">
+        <div
+          aria-label="Click to toggle Human Resources Category"
+          class="icon-group js-icon-group aside-hr">
           <i class="fas fa-fw fa-square fa-check-square" aria-hidden="true">
           </i>
           <h4 class="aside-nav">Human Resources</h4>
@@ -99,21 +110,30 @@
         <section
           class="menu-toggle"
           aria-label="toggle sidebar navigation menu">
-          <i class="fas fa-caret-left"></i>
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-caret-left" aria-hidden="true"></i>
+          <i class="fas fa-bars" aria-hidden="true"></i>
         </section>
         <section class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search for a job, task, or resume">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input
+            aria-label="Search for a job, task, or resume"
+            type="text"
+            placeholder="Search for a job, task, or resume">
         </section>
-        <section class="add-friend">
-          <i class="fas fa-user-plus"></i>
+        <section
+          aria-label="Click to add friend"
+          class="add-friend">
+          <i class="fas fa-user-plus" aria-hidden="true"></i>
         </section>
-        <section class="add-event">
-          <i class="fas fa-calendar-plus"></i>
+        <section
+          aria-label="Click to add event"
+          class="add-event">
+          <i class="fas fa-calendar-plus" aria-hidden="true"></i>
         </section>
-        <section class="toggle-view">
-          <i class="fas fa-th"></i>
+        <section
+          aria-label="Click to toggle view"
+          class="toggle-view">
+          <i class="fas fa-th" aria-hidden="true"></i>
         </section>
       </nav>
       <header>
@@ -129,18 +149,20 @@
             </div>
           </div>
           <div class="header-buttons">
-            <button class="job-status">
-              <i class="fas fa-circle fa-fw"></i>
+            <button
+              aria-label="Click to toggle Job Status open/closed"
+              class="job-status">
+              <i class="fas fa-circle fa-fw" aria-hidden="true"></i>
               OPEN
             </button>
-            <button>
-              <i class="fas fa-bookmark fa-fw"></i>
+            <button aria-label="Click to bookmark job posting">
+              <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>
             </button>
-            <button>
-              <i class="fas fa-pencil-alt fa-fw"></i>
+            <button aria-label="Click to edit job posting">
+              <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
             </button>
-            <button>
-              <i class="fas fa-trash-alt fa-fw"></i>
+            <button aria-label="Click to delete job posting">
+              <i class="fas fa-trash-alt fa-fw" aria-hidden="true"></i>
             </button>
           </div>
         </article>
@@ -148,7 +170,7 @@
           <h4 class="summary active">SUMMARY</h4>
           <h4 class="more-views">
             MORE DASHBOARD VIEWS
-            <i class="fas fa-caret-right fa-fw"></i>
+            <i class="fas fa-caret-right fa-fw" aria-hidden="true"></i>
           </h4>
           <h4>APPLICANTS</h4>
           <h4>JOB BOARD</h4>
@@ -160,7 +182,9 @@
       </header>
       <section class="dashboard">
         <article class="data-charts">
-          <section class="first">
+          <section
+            aria-label="A circular chart showing the number of applicants"
+            class="first">
             <div class="chart-circles">
               <div class="single-chart">
                 <svg viewbox="0 0 36 36" class="circular-chart green">
@@ -183,7 +207,9 @@
                   </text>
                 </svg>
               </div>
-              <div class="single-chart">
+              <div
+                aria-label="A circular chart showing the number of interviews"
+                class="single-chart">
                 <svg viewbox="0 0 36 36" class="circular-chart blue">
                   <path class="circle-bg"
                     d="M18 2.0845
@@ -204,7 +230,9 @@
                   </text>
                 </svg>
               </div>
-              <div class="single-chart">
+              <div
+                aria-label="A circular chart showing the number of forwards"
+                class="single-chart">
                 <svg viewbox="0 0 36 36" class="circular-chart purple">
                   <path class="circle-bg"
                     d="M18 2.0845
@@ -229,7 +257,7 @@
           </section>
           <section class="lower-first">
             <button class="totals-button">
-              TOTALS <span class="span-dot">&middot</span> Out of <span class="span-nums">5,231</span> views
+              TOTALS <span class="span-dot" aria-hidden="true">&middot</span> Out of <span class="span-nums">5,231</span> views
             </button>
           </section>
           <section class="second">
@@ -245,16 +273,20 @@
           </section>
         </article>
         <div class="main-separator">
-          <button class="show-more-dashboard">
-            <i class="fas fa-caret-up fa-fw"></i>
+          <button
+            aria-label="Click to toggle more or less information about a job"
+            class="show-more-dashboard">
+            <i class="fas fa-caret-up fa-fw" aria-hidden="true"></i>
           </button>
         </div>
         <article class="job-details">
           <article class="job-description">
             <section class="job-head">
               <h3 class="job-descript-title">JOB DESCRIPTION</h3>
-              <button class="job-descript-edit">
-                <i class="fas fa-pencil-alt fa-fw"></i>
+              <button
+                aria-label="Click to edit this job posting"
+                class="job-descript-edit">
+                <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
                 <h3>EDIT</h3>
               </button>
             </section>
@@ -289,7 +321,7 @@
                   <img
                     class="hiring-lead-pic"
                     src="images/calvin.jpg"
-                    alt="A photo of our hiring lead">
+                    alt="A photo of the hiring lead">
                   <p>Tom Tizzy</p>
                 </div>
               </article>
@@ -302,19 +334,19 @@
           <section class="links">
             <section class="social-links">
               <button class="facebook-link">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 <p class="large-msg">Post to Facebook<p>
                 <p class="small-msg">Facebook<p>
                 <div class="button-placeholder"></div>
               </button>
               <button class="twitter-link">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
                 <p class="large-msg">Tweet this Job</p>
                 <p class="small-msg">Twitter<p>
                 <div class="button-placeholder"></div>
               </button>
               <button class="linkedin-link">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
                 <p class="large-msg">Post to Linkedin</p>
                 <p class="small-msg">Linkedin<p>
                 <div class="button-placeholder"></div>
@@ -323,34 +355,54 @@
             <section class="link-box">
               <article class="job-link">
                 <div class="link-icon-group">
-                  <i class="fas fa-globe-americas"></i>
+                  <i class="fas fa-globe-americas" aria-hidden="true"></i>
                   <h2>Link to this Job</h2>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
                 <div class="link-input-group">
-                  <input type="text" class="link-input" placeholder="http://loremipsum.dol/sit amet consectetur">
-                  <input type="submit" class="link-submit" value="Copy">
+                  <input
+                    aria-label="The link to this job"
+                    type="text"
+                    class="link-input"
+                    placeholder="http://loremipsum.dol/sit amet consectetur">
+                  <input
+                    aria-label="Click to copy the link to your clipboard"
+                    type="submit"
+                    class="link-submit"
+                    value="Copy">
                 </div>
               </article>
               <article class="button-widget">
                 <div class="link-icon-group">
-                  <i class="fas fa-money-check fa-fw"></i>
+                  <i class="fas fa-money-check fa-fw" aria-hidden="true"></i>
                   <h2>Use the Button Widget</h2>
                 </div>
                 <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
                 <div class="link-input-group">
-                  <input type="text" class="link-input" placeholder='<script type="text/javascript" stylesheet'>
-                  <input type="submit" class="link-submit" value="Copy">
+                  <input
+                    aria-label="The script to embed this job on your website"
+                    type="text"
+                    class="link-input"
+                    placeholder='<script type="text/javascript" stylesheet'>
+                  <input
+                    aria-label="Click to copy the script to your clipboard"
+                    type="submit"
+                    class="link-submit"
+                    value="Copy">
                 </div>
               </article>
               <article class="upload-resume">
                 <div class="link-icon-group">
-                  <i class="fas fa-paper-plane"></i>
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
                   <h2>Upload Resumes by Email</h2>
                 </div>
                 <p>You can automatically upload multiple resumes to the job by emailing the address below.</p>
                 <div class="link-input-group">
-                  <input type="submit" class="link-input email-submit" value="tomtizzy@gmail.com">
+                  <input
+                    aria-label="Email resumes to Hiring Lead"
+                    type="submit"
+                    class="link-input email-submit"
+                    value="tomtizzy@gmail.com">
                 </div>
               </article>
             </section>

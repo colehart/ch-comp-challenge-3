@@ -1447,7 +1447,7 @@ h2 {
 
 @media screen and (max-width: 459px) {
   main {
-    grid-template-rows: 63px 200px 1825px;
+    grid-template-rows: 63px 200px 1835px;
   }
 
   .job-details {
@@ -1471,33 +1471,21 @@ h2 {
   }
 }
 
+@media screen and (max-width: 451px) {
+  main {
+    grid-template-rows: 63px 200px 1860px;
+  }
+}
+
 @media screen and (max-width: 431px) {
   .jb-description p {
     padding-right: 10px;
   }
 }
+
 @media screen and (max-width: 421px) {
   main {
-    grid-template-rows: 63px 200px 1830px;
-  }
-
-  .job-details {
-    grid-template-rows: 686px 250px;
-  }
-
-  .job-description {
-    grid-template-rows: 60.5px 624px;
-  }
-
-  .job-body {
-    grid-template-rows: repeat(5, 58px) 196px 67px 65px;
-  }
-}
-
-@media screen and (max-width: 406px) {
-  /*tighten up svgs here*/
-  main {
-    grid-template-rows: 63px 200px 1830px;
+    grid-template-rows: 63px 200px 1860px;
   }
 
   .job-details {
@@ -1529,6 +1517,14 @@ h2 {
   }
 }
 
+@media screen and (max-width: 416px) {
+  /*tighten up svgs here*/
+  .single-chart {
+    width: 60%;
+    transform: scale(1.75, 1.75);
+  }
+}
+
 @media screen and (max-width: 368px) {
   main {
     grid-template-rows: 63px 200px 1845px;
@@ -1555,11 +1551,44 @@ h2 {
   h1 {
     font-size: 1.285rem;
   }
+
+  .single-chart {
+    width: 70%;
+    transform: scale(1.75, 1.75);
+  }
 }
 
 @media screen and (max-width: 334px) {
   main {
     grid-template-rows: 63px 200px 1860px;
+  }
+
+  .search-bar {
+    justify-content: center;
+  }
+
+  .search-bar i {
+    margin-left: 0;
+  }
+
+  .search-bar input {
+    display: none;
+  }
+
+  .search-bar:hover {
+    background-color: #2CAFFE;
+    cursor: pointer;
+    border-color: transparent;
+  }
+
+  .search-bar:hover > i {
+    color: #ffffff;
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+
+  .search-bar:active {
+    background-color: #289EE5;
   }
 
   .job-details {

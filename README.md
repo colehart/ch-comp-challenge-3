@@ -7,6 +7,8 @@ Assignment specs can be found [here](http://frontend.turing.io/projects/m1-stati
 
 ### See It Live
 
+Click the screen recording below to visit the live site.
+
 [![A screen recording of my fully responsive site](images/my-site-recording.gif "My Site Recording")](https://colehart.github.io/ch-comp-challenge-3/)
 
 ### Compare the comps
